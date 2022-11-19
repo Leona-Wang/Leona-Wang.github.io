@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+<style>
+
+	#inputTitle{
+		background-color: yellow;
+	}
+
+	.intro{
+		background-color: skyblue;
+	}
+
+	label{
+		color: limegreen;
+		border:1px solid black;
+	}
+
+	.extra label{
+		color:inherit;
+	}
+
+	em{
+		text-decoration: line-through;
+	}
+
+	p em{
+		text-decoration: underline;
+	}
+
+</style>
+</head>
+<body>
+
+	<!--HW1-->
+	<p>
+		<h1><em>Feedback Form</em></h1>
+	</p>
+
+	<div class="intro">
+		Please fill out <span id="inputTitle">this form to help us imprive</span> our site.
+	</div>
+
+	<div>
+		<label><em>Name:
+			<input name = "name" type="text" size="25"
+				maxlength="30">
+		</em></label>
+	</div>
+
+	<p>
+		<label class="extra" style="color:black">Comments:
+			<br>
+				<textarea style="width:300px;height:100px;">
+					Enter comments here.
+				</textarea>
+			</br>
+		</label>
+	</p>
+
+	<p>
+		<label>E-mail Address:
+			<input E-mail = "E-mail" type="text" size="25"
+				maxlength="30">
+		</label>
+	</p>
+
+	<P>
+		<label><b>Things you liked:</b>
+			<br>
+				<form action="/action_page.php" method="get">
+						<input type="checkbox" name="preference" value="siteDesign">Sites Design
+						<input type="checkbox" name="preference" value="links">Links
+						<input type="checkbox" name="preference" value="easeOfUse">Ease of use
+						<input type="checkbox" name="preference" value="images">Images
+						<input type="checkbox" name="preference" value="sourceCode">Source code	
+				</form>
+			</br>
+		</label>
+	</p>
+
+	<p>
+		<label><b>How did you get to other site?:</b></label>
+		<br>
+			<form action="/action_page.php" method="get">
+				<input type="radio" name="ways" value="searchEngine" checked>Search engine
+				<input type="radio" name="ways" value="linksFromAnotherSite">Links from another site
+				<input type="radio" name="ways" value="Deitel_comWebsite">Deitel.com Web site
+				<input type="radio" name="ways" value="referenceInABook">Reference in a book
+				<input type="radio" name="ways" value="other">Other
+			</form>
+		</br>
+	</p>
+
+	<p>
+		<label>Rate our site:
+			<form action="/action_page.php">
+				<select name="rate">
+					<option value="Amazing">Amazing</option>
+					<option value="Wonderful">Wonderful</option>
+					<option value="Excellent">Excellent</option>
+					<option value="Brilliant">Brilliant</option>
+				</select>
+				<br><br>
+				<input type="submit" value="Submit">
+				<input type="reset" value="Clear">
+			</form>
+		</label>
+	</p>
+
+</body>
+</html>

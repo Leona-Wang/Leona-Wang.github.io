@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+<style>
+
+	#inputTitle{
+		background-color: yellow;
+	}
+
+	.intro{
+		background-color: skyblue;
+	}
+
+	label{
+		color: limegreen;
+		border:1px solid black;
+	}
+
+	.extra label{
+		color: inherit;
+	}
+
+	em{
+		text-decoration: line-through;
+	}
+
+	p em{
+		text-decoration: underline;
+	}
+
+</style>
+</head>
+<body>
+
+	<div>
+		<a href="https://Leona-Wang.github.io/lab2/secondpage"><h1>Second page</h1></a>
+	</div>
+	
+	<div class="intro">
+		<h1>New HTML5<span id="inputTitle">Input Types Demo</span> </h1>
+	</div>
+		
+	<p>
+		<em>This form demonstrates the new HTML5 input types and the placeholder,required and autofocus attributes.</em>
+	</p>
+
+	<div>
+		<em><label class="extra" style="color:black">Color:</label></em>
+			<input type="color" autofocus />
+			(Hexadecimal code such as #ADD8E6)
+	</div>
+
+	<p>
+		<form action="/action_page.php">
+			<label for="inputDate">Date:</label>
+			<input type="date" id="inputDate" name="inputDate">
+		</form>
+	</p>
+
+	<p>
+		<label for="inputEmail">Email:</label>
+		<input type="email" name="inputEmail" placeholder="name@domain.com" required>
+		(name@domain.com)
+	</p>
+
+	<p>
+		<form action="/action_page.php">
+			<label for="inputQuantity">Quantity:</label>
+			<input type="number" id="inputQuantity" name="inputQuantity" min="0" max="7" value="4">
+			(Enter a number between 0 and 7)
+		</form>
+
+	</p>
+
+	<p>
+		<form action="/action_page.php" method="get">
+			<label for="inputRange">Range:</label>0
+			<input type="range" id="inputRange" name="inputRange" min="0" max="20">
+			20
+		</form>
+	</p>
+
+	<p>
+		<form action="/action_page.php">
+			<label for="inputSearch">Search:</label>
+			<input type="text" id="inputSearch" name="inputSearch" placeholder="search query">
+		</form>
+	</p>
+
+	<p>
+		<form action="/action_page.php">
+			<label for="inputTime">Time:</label>
+			<input type="time" id="inputTime" name="inputTime">
+			(hh:mm)
+		</form>
+	</p>
+
+	<p>
+		<input type="submit" value="Submit">
+		<input type="reset" value="Clear">
+	</p>
+
+</body>
+</html>
