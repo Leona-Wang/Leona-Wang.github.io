@@ -1,0 +1,25 @@
+h1{
+    background-color: coral;
+}
+body{
+    background-image: url("test001_picture/smile.jpg");
+    background-repeat: repeat-y;
+    background-position: bottom right;
+    background-attachment: fixed;
+    font-style: arial,sans-serif;
+
+}
+p{
+    padding-top: 50px;
+    padding-left: 80px;
+    padding-right: 30px;
+    padding-bottom: 50px;
+}
+div{
+    border: 1px solid black;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-right: 150px;
+    margin-left: 80px;
+    background-color: lightblue;
+}
