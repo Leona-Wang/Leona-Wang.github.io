@@ -1,0 +1,55 @@
+div{
+    margin-left: auto;
+    margin-right: 0%;
+    width: 100%;
+}
+
+input{
+    size: 80%;
+}
+
+
+#input1{
+    width: 80%;
+}
+
+.input23{
+    position: relative;
+    width: 60%;
+    
+}
+
+#input4{
+    width:60%;
+    position: relative;
+}
+
+#left{
+    
+    line-height:50px;
+    
+    float:left;
+    }
+
+#right{
+    
+    line-height:50px;
+    float:left;
+}
+
+
+.flex-container{
+    display: flex;
+    flex-direction: row;
+}
+
+textarea{
+    height: 50%;
+    width: 50%;
+    resize: none;
+}
+
+
+
+
+
