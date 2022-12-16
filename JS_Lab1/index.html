@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        var firstInput=parseInt(window.prompt("Please enter the first number:"), 10);
+        var secondInput=parseInt(window.prompt("Please enter the second number:"), 10);
+        if(firstInput>secondInput){
+            document.body.style.backgroundColor='lightblue';
+            document.write(firstInput+">"+secondInput);
+            
+        }
+        else if(firstInput<secondInput){
+            document.body.style.backgroundColor='lightgreen';
+            document.write(secondInput+">"+firstInput);
+        }
+        else{
+            document.body.style.backgroundColor='lightyellow';
+            document.write(firstInput+"=="+secondInput);
+        }
+    </script>
+    <input type="button" value="1st button" onclick="alert(firstInput)">
+    <input type="button" value="2nd button" onclick="alert(secondInput)">
+</body>
+</html>
