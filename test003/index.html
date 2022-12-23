@@ -1,83 +1,30 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
+<!DOCTYPE html> 
+<html> 
+  
+<body> 
+  
+  <h4> 
+      Change the text of the text field  
+      ,and then click the button. 
+  </h4> 
+  
+  <label for="domTextElement">Name: </label>
+  <input type="text" id="domTextElement" > 
+  
+  <button type="button"  onclick="getValueInput()"> 
+      click me!! 
+  </button> 
+  
+  <p id="valueInput"></p> 
+
+  <script> 
+
+    const getValueInput = () =>{
+      let inputValue = document.getElementById("domTextElement").value; 
+      document.getElementById("valueInput").innerHTML = inputValue; 
+    }
     
-    <form action="#">
-        <input id="rollButton" type="button" value="Roll Dice">
-    </form>
-
-    <div id="frequencyTableDiv"></div>
-    <p>
-        <img id="die1" src="./test003_picture/die1.png" alt="blank image">
-        <img id="die2" src="./test003_picture/die1.png" alt="blank image">
-        <img id="die3" src="./test003_picture/die1.png" alt="blank image">
-        <img id="die4" src="./test003_picture/die1.png" alt="blank image">
-        <img id="die5" src="./test003_picture/die1.png" alt="blank image">
-        <img id="die6" src="./test003_picture/die1.png" alt="blank image">
-    </p>
-    
-
-
-    <script>
-
-        var frequency1=0;
-        var frequency2=0;
-        var frequency3=0;
-        var frequency4=0;
-        var frequency5=0;
-        var frequency6=0;
-
-        var die1Image;
-        var die2Image;
-        var die3Image;
-        var die4Image;
-        var die5Image;
-        var die6Image;
-        
-
-        function start(){
-            var button=document.getElementById("rollButton");
-            button.addEventListener("click",rollDice,false);
-            die1Image=document.getElementById("die1");
-            die2Image=document.getElementById("die2");
-            die3Image=document.getElementById("die3");
-            die4Image=document.getElementById("die4");
-            die5Image=document.getElementById("die5");
-            die6Image=document.getElementById("die6");
-        }
-
-        function rollDice(){
-            
-            setImage(die1Image);
-            setImage(die2Image);
-            setImage(die3Image);
-            setImage(die4Image);
-            setImage(die5Image);
-            setImage(die6Image);
-        }
-
-        function setImage(dieImg){
-            var dieValue=Math.floor(1+Math.random()*6);
-            dieImg.setAttribute("src","./test003_picture/die"+dieValue+".png");
-            dieImg.setAttribute("alt","die image with "+dieValue+" spot(s) ");
-
-        }
-
-
-        
-
-        window.addEventListener("load",start,false);
-    </script>
-
-
-
-
-
-</body>
-</html>
+  </script> 
+</body> 
+  
+</html> 

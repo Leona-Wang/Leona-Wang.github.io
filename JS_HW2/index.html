@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <p>
+        <form name="form" id="form">
+
+        
+            <label>
+                Number 1:
+                <input id="number1" type="text" size="25" maxlength="30">
+            </label>
+    
+
+            <label>
+                Number 2:
+                <input id="number2" type="text" size="25">
+            </label>
+    
+
+    
+        
+            <label>Operate way?
+            
+                <select name="caculation">
+                    <option value="+">+</option>
+                    <option value="-">-</option>
+                    <option value="*">*</option>
+                    <option value="/">/</option>
+                </select>
+                
+            </label>
+        </form>
+        
+    </p>
+
+    <p>
+        <form action="#">
+            <input id="add" type="button" value="Add">
+        </form>  
+        
+    </p>
+
+    <div id="result"></div>
+
+    <script>
+
+        //var number1=parseInt(document.getElementById("number1"),10);
+        //var number2=parseInt(document.getElementById("number2"),10);
+
+        
+        
+
+        function start(){
+            var button=document.getElementById("add");
+            button.addEventListener("click",caculate,false);
+        }
+
+        
+
+
+        function caculate(){
+            
+            var number1=parseInt(document.getElementById("number1").value);
+            var number2=parseInt(document.getElementById("number2").value);
+            
+            printResult(number1,number2);
+
+            
+        }
+
+        function printResult(number1,number2){
+
+            var print=document.getElementById("result");
+            var caculation = String(form.caculation.value);
+            var caculateNumber=0;
+            
+                
+            if (caculation=="+"){
+                caculateNumber= number1+number2;
+            }
+            else if(caculation=="-"){
+                caculateNumber= number1-number2;
+            }   
+            else if(caculation=="*"){
+                caculateNumber= number1*number2;
+            }
+            else if(caculation=="/"){
+                caculateNumber= number1/number2;
+            }
+
+            print.innerHTML="<p>"+"<label>Result="+caculateNumber+"</label></p>";
+        }
+        
+
+
+
+        window.addEventListener("load",start);
+    </script>
+
+
+
+
+
+
+
+</body>
+</html>
