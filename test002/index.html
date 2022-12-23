@@ -7,11 +7,34 @@
     
 </head>
 <body>
-    <input type="button" value="1st button" onclick="alert('1st button')">
-    <input type="button" value="2nd button" onclick="alert('2nd button')">
-    <input type="button" value="blue" onclick="document.body.style.backgroundColor='blue';">
-    <input type="button" value="green" onclick="document.body.style.backgroundColor='green';">
-    <input type="button" value="change Color" onclick="alert('change color'); 
-    document.body.style.backgroundColor='red';">
+
+    <script>
+    var firstInput=parseInt(window.prompt("Please enter the first number:"), 10);
+    var secondInput=parseInt(window.prompt("Please enter the second number:"), 10);
+    var thirdInput=parseInt(window.prompt("Please enter the third number:"), 10);
+    
+    var maxium=0;
+
+    if (firstInput>secondInput && firstInput>thirdInput){
+        maxium=firstInput;
+    }
+    else if(secondInput>firstInput && secondInput>thirdInput){
+        maxium=secondInput;
+    }
+    else if(thirdInput>firstInput && thirdInput>secondInput){
+        maxium=thirdInput;
+    }
+
+    document.write("Maxium:"+maxium);
+    </script>
+    
+
+
+
+
+    
+    <input type="button" value="1st button" onclick="alert(firstInput)">
+    <input type="button" value="2nd button" onclick="alert(secondInput)">
+    <input type="button" value="3rd button" onclick="alert(thirdInput)">
 </body>
 </html>
