@@ -1,13 +1,28 @@
-.box{
-    width: 750px;
-    margin: 0 auto;
-    color: #666;
-    
-    column-count: 3;
-    column-gap: 22px;
-    column-rule: 2px dashed #222;
-  }
+.box {
 
-  h2{
-    column-span: all;
-  }
+
+  display: grid;
+  grid-template-columns: 1fr 10fr 1fr 20fr 1fr;
+
+}
+
+.box_column {
+  grid-auto-flow: column;
+}
+
+.item1 {
+  border: #696969 1px solid;
+  border-radius: 50px 50px 50px 50px;
+  
+}
+
+.item2 {
+  border: #696969 1px solid;
+  border-radius: 50px 50px 50px 50px;
+  
+}
+
+.item3{
+  border-radius: 50px 50px 50px 50px;
+  background:transparent;
+}
