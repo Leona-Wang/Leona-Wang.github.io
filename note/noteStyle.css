@@ -1,0 +1,11 @@
+
+
+.layout{
+    display:grid;
+    grid-template-columns: 1fr 10fr 1fr 20fr 1fr;
+}
+
+.boxShape{
+    border:#696969 1px solid;
+    border-radius: 50px 50px 50px 50px;
+}
