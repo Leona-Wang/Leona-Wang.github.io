@@ -1,28 +1,14 @@
-.box {
-
-
-  display: grid;
-  grid-template-columns: 1fr 10fr 1fr 20fr 1fr;
-
+.aaa {
+  width: 10em;
+  height: 5ex;
+  background-color: gold;
+  border: 2px solid firebrick;
+  border-radius: 10px;
+  font-weight: bold;
+  color: black;
+  cursor: pointer;
 }
 
-.box_column {
-  grid-auto-flow: column;
-}
-
-.item1 {
-  border: #696969 1px solid;
-  border-radius: 50px 50px 50px 50px;
-  
-}
-
-.item2 {
-  border: #696969 1px solid;
-  border-radius: 50px 50px 50px 50px;
-  
-}
-
-.item3{
-  border-radius: 50px 50px 50px 50px;
-  background:transparent;
+.aaa:hover {
+  background-color: bisque;
 }
