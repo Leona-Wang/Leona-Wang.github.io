@@ -1,3 +1,17 @@
-.gridContainer{
+.gridContainer {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(4,1fr);
     
+}
+
+.gridContainer div{
+    border: solid 1px white;
+    padding: 0.25em;
+}
+
+.gridContainer1{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: repeat(2,1fr);
 }
